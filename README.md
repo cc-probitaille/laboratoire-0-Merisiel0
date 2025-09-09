@@ -74,15 +74,15 @@ Vous pouvez cocher chaque étape dans la liste suivante:
 
 ### 0. préparer votre machine pour ce tutoriel;
 
-- [ ] jeter un œil sur la [documentation du squelette](docs/Squelette.md)
+- [x] jeter un œil sur la [documentation du squelette](docs/Squelette.md)
 
-- [ ] [installer node.js](https://nodejs.org/en/download/) sur votre machine
+- [x] [installer node.js](https://nodejs.org/en/download/) sur votre machine
 
-- [ ] [installer VSCode](https://code.visualstudio.com/Download) sur votre machine
+- [x] [installer VSCode](https://code.visualstudio.com/Download) sur votre machine
 
-- [ ] [installer l'extension PlantUML dans VSCode](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+- [x] [installer l'extension PlantUML dans VSCode](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 
-- [ ] configurer l'extension PlantUML pour utiliser plantuml.com comme serveur en ajoutant/modifiant les "User settings" en VSCode:
+- [x] configurer l'extension PlantUML pour utiliser plantuml.com comme serveur en ajoutant/modifiant les "User settings" en VSCode:
 
   ```json
       "plantuml.server": "https://www.plantuml.com/plantuml",
@@ -91,14 +91,14 @@ Vous pouvez cocher chaque étape dans la liste suivante:
 
   (Si vous avez les droits d'administrateur Windows) installer [GraphViz](http://www.graphviz.org/download/) pour utiliser un serveur local de PlantUML plutôt que le serveur sur Internet et configurer `"plantuml.render": "Local"` selon la [documentation](https://github.com/qjebbs/vscode-plantuml#about-render).
 
-- [ ] [installer GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop) sur votre machine
+- [x] [installer GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop) sur votre machine
 
-- [ ] [cloner](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) le dépôt de code de ce laboratoire sur votre machine
+- [x] [cloner](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) le dépôt de code de ce laboratoire sur votre machine
 
   - :warning: Ne pas cloner le code dans un chemin qui contient des espaces ou des accents.
   - Facultatif : Lire cette [Présentation de GitHub dans Visual Studio Code](https://learn.microsoft.com/fr-ca/training/modules/introduction-to-github-visual-studio-code/) de Microsoft. 
 
-- [ ] faire un build du code
+- [x] faire un build du code
 
   - Ouvrir le dossier du projet en VSCode **File > Open Folder...**
 
@@ -123,7 +123,7 @@ Vous pouvez cocher chaque étape dans la liste suivante:
     ...
     ```
 
-- [ ] exécuter les tests
+- [x] exécuter les tests
 
   - Dans le terminal, taper `npx jest --colors lab0.test.ts` pour exécuter les tests du lab 0.
 
@@ -230,18 +230,18 @@ Vous pouvez cocher chaque étape dans la liste suivante:
 
     Une croix (rouge), p. ex. `× devrait trouver votre nom` signifie qu'un test échoue, tandis qu'un test réussi s'affiche avec une coche `√` (verte).
 
-- [ ] exécuter le serveur sur localhost
+- [x] exécuter le serveur sur localhost
 
   - Dans le terminal, `npm start`
 
-- [ ] exécuter l'application avec un navigateur moderne à l'URL [http://localhost:3000](http://localhost:3000)
-  - [ ] démarrer une partie avec un joueur
-  - [ ] essayer le bouton pour jouer
-  - [ ] regarder la page Classement
-  - [ ] revenir à la page d'accueil pour voir le jeu
+- [x] exécuter l'application avec un navigateur moderne à l'URL [http://localhost:3000](http://localhost:3000)
+  - [x] démarrer une partie avec un joueur
+  - [x] essayer le bouton pour jouer
+  - [x] regarder la page Classement
+  - [x] revenir à la page d'accueil pour voir le jeu
 
-- [ ] regarder dans VSCode la structure des pages statiques dans `views/` ainsi que la barre de navigation (`views/includes/navbar.pug`) qui est [incluse](https://pugjs.org/language/includes.html) dans les pages statiques (`views/index.pug`,`views/stats.pug`).
-- [ ] regarder comment dans `src/app.ts` un gabarit Pug `views/index.pug` est utilisé:
+- [x] regarder dans VSCode la structure des pages statiques dans `views/` ainsi que la barre de navigation (`views/includes/navbar.pug`) qui est [incluse](https://pugjs.org/language/includes.html) dans les pages statiques (`views/index.pug`,`views/stats.pug`).
+- [x] regarder comment dans `src/app.ts` un gabarit Pug `views/index.pug` est utilisé:
 
   ```typescript
     // Route pour jouer (index)
@@ -277,10 +277,10 @@ Vous pouvez cocher chaque étape dans la liste suivante:
 
 La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.md](docs/Squelette.md). Dans cette étape, vous devez:
 
-- [ ] dans le fichier `docs/Squelette.md` qui sert de documentation, ajouter les informations pour vous identifier dans la section **Identification de l'étudiant**.  
+- [x] dans le fichier `docs/Squelette.md` qui sert de documentation, ajouter les informations pour vous identifier dans la section **Identification de l'étudiant**.  
   Vérifier le travail avec le test, `npx jest --colors identification-lab0.test.ts`
 
-- [ ] dans le fichier `docs/Squelette.md`, ajouter le cas d'utilisation *Redémarrer* (texte) juste après [le texte du cas d'utilisation *Jouer aux dés*](docs/Squelette.md#jouer-aux-dés):
+- [x] dans le fichier `docs/Squelette.md`, ajouter le cas d'utilisation *Redémarrer* (texte) juste après [le texte du cas d'utilisation *Jouer aux dés*](docs/Squelette.md#jouer-aux-dés):
 
   ```markdown
   #### Redémarrer
@@ -289,7 +289,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
   2. Le Système termine tous les jeux en cours et redémarre l'application.
   ```
 
-- [ ] ajouter le cas d'utilisation [au diagramme UML](docs/modeles/dcu.puml) (PlantUML)
+- [x] ajouter le cas d'utilisation [au diagramme UML](docs/modeles/dcu.puml) (PlantUML)
 
   - installer l'extension [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) dans VSCode
 
