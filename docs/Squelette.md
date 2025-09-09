@@ -200,12 +200,13 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 - d1.valeur est devenue un nombre entier aléatoire entre 1 et 6
 - d2.valeur est devenue un nombre entier aléatoire entre 1 et 6
+- d3.valeur est devenue un nombre entier aléatoire entre 1 et 6
 - j.nbLancers a été incrémenté sur une base de correspondance avec nom
-- j.nbLancersGagnés a été incrémenté si la totale de d1.valeur et d2.valeur est égale à 7
+- j.nbLancersGagnés a été incrémenté si la totale de d1.valeur, d2.valeur, d3.valeur est plus petite ou égale à 10
 
 **RDCU**
 
-![Diagramme de séquence, jouer](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/rdcu-jouer.puml)
+![rdcu-jouer](https://www.plantuml.com/plantuml/svg/bPFFJeD04CRlFCN4awOs4RYHjcbIZB69nlZlv6KBKmh2B9bTYBwNR-2BEKjjOvksjWSupFTzlszs2MDZ5TkcAZtpdbEjM5LWx6U9ykOysL9IdAkcj7DDbbI5y8gSAbAUpQqa7kF92zIwOIXqW-n9nkP9NYkoS1PDiOanHdC6oa2oAJf_moPwepjL3vwacRBBQJSSTVwYsWoaVXHZfwJ-bXAibM1B2TTAk5KVBRkMLLv_b42qFCCvwUh28sqHECyMLkO6IqqmaIlWxwzIKbxI7nMLIy0GaWMoU_O6drcHcMkkaE4s1YJGimAjSPJK5zkCbJ42s9c-_gYHxThR-bBPgcwBm-xW1BBpji6nvF04ilEsuP7aGcOv9VUp1_Ujq1oawzgws-YvnNkkOp04_ye3s06wKHbXnmFOJqHAGQYhJMhPcbQ4_nVF_jf_2m-anj8clzeF "rdcu-jouer")
 
 #### Opération: `terminerJeu(nom:String)`
 
