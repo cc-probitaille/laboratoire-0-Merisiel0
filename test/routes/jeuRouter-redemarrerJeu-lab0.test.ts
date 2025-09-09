@@ -17,13 +17,12 @@ beforeAll(async () => {
 describe('GET /api/v1/jeu/redemarrerJeu', () => {
   it("devrait répondre avec un appel réussi en json", async () => {
     const response = await request.get("/api/v1/jeu/redemarrerJeu");
-    const resultat = JSON.parse(response.body.resultat);
+    expect(response.status).toBe(200);
     expect(response.type).toBe("application/json");
-    expect(resultat.status).toBe(200);
   });
 
   it("devrait ne plus y avoir de joueur", async () =>{
-    const response = await request.post('/api/v1/jeu/redemarrerJeu').send({ nom: testNom1 });
+    const response = await request.get('/api/v1/jeu/redemarrerJeu');
     expect(response.statusCode).toBe(200);
     const joueursJSON = jeuRoutes.controleurJeu.joueurs;
     const joueursArray = JSON.parse(joueursJSON);

@@ -55,6 +55,15 @@ export class JeuDeDes {
         return JSON.stringify(resultat);
     }
 
+    public redemarreJeu() {
+        this._joueurs.clear();
+        const resultat = {
+            message: "L'application redémarre"
+        };
+        // ne pas retourner l'objet de la couche domaine
+        return JSON.stringify(resultat);
+    }
+
     public terminerJeu(nom: string): string {
         if (!this._joueurs.get(nom)) {
             throw new NotFoundError(`Joueur '${nom}' n'existe pas.`);
