@@ -21,11 +21,17 @@ describe('GET /api/v1/jeu/redemarrerJeu', () => {
     expect(response.type).toBe("application/json");
   });
 
-  it("devrait ne plus y avoir de joueur", async () =>{
+  it("devrait ne plus y avoir de joueur", async () => {
     const response = await request.get('/api/v1/jeu/redemarrerJeu');
     expect(response.statusCode).toBe(200);
     const joueursJSON = jeuRoutes.controleurJeu.joueurs;
     const joueursArray = JSON.parse(joueursJSON);
     expect(joueursArray.length).toBe(0);
+  });
+
+  it("jouer ne devrait plus fonctionner", async () => {
+    const response = await request.get('/api/v1/jeu/jouer/');
+    expect(response.status).toBe(404);
+
   });
 });

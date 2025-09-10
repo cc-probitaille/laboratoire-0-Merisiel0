@@ -112,7 +112,7 @@ export class JeuRouter {
   public redemarrerJeu(req: Request, res: Response, next: NextFunction) {
     try {
       // Invoquer l'opération système (du DSS) dans le contrôleur GRASP
-      const resultat = this._controleurJeu.redemarreJeu();
+      const resultat = this._controleurJeu.redemarrerJeu();
       // flash un message de succès
       req.flash('info',
         `L'application redémarre`);
